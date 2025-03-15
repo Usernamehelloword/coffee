@@ -1,0 +1,567 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation (ul list) */
+.ee {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+   
+}
+
+.et a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease;
+}
+
+
+.et a:hover {
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+}
+
+e2 {
+    background-color: aliceblue;
+}
+
+body {
+    background-color: rgb(74, 28, 28);
+    color:black;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    color: chocolate;
+}
+
+#p1 {
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    
+}
+
+#e7 {
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    left: 50px;
+    top: 350px;
+}
+
+#e8 {
+    position: absolute;
+    left: 50px;
+    height: 100px;
+    width: 400px;
+    top: 450px;
+}
+
+#box {
+    padding: 0;
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    height: 100px;
+    width: 300px;
+}
+
+#e4 {
+    position: absolute;
+    left: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: chocolate;
+    padding: 10px;
+    top: 530px;
+    width: 100px;
+    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease;
+}
+
+#e4:hover {
+    color: antiquewhite;
+    transform: scale(1.1);
+}
+
+#e5 {
+    position: absolute;
+    left: 170px;
+    border: 2px solid white;
+    background-color: rgb(74, 28, 28);
+    width: 100px;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    top: 530px;
+    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease;
+}
+
+#e5:hover {
+    color: antiquewhite;
+    transform: scale(1.1);
+}
+
+.er {
+    position: fixed;
+    left: 400px;
+    gap: 10px;
+    text-align: right;
+    padding: 45px 20px 10px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    display: flex; /* Ensure flex properties apply */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Ensure when zoomed in, elements like e7, e8, e5, e4 are centered within the nav */
+nav #e7,
+nav #e8,
+nav #e5,
+nav #e4 {
+    margin: 0 auto; /* Center these elements */
+    transform-origin: center; /* Ensure scaling happens from the center */
+}
+#pp{
+    color: aliceblue;
+    text-align: letf;
+    
+}
+
+/* Optional: Add responsiveness to maintain layout on zoom */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:480px){
+    nav{
+        flex-direction: column;
+       
+    }
+    .et a{
+    height: auto;
+    padding: 5px 5px;
+    }
+    #pp{
+        text-align: letf;
+        font-size: 1rem;
+    }
+    
+}
+
+/* Make the hero image fit properly */
+.hero-image-wrapper {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height automatically */
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease; /* Smooth transition for transform */
+}
+
+.hero-image-wrapper:active {
+    transform: scale(1.4); /* Scale up when active (e.g., on click) */
+}
+
+
+.hero-image {
+    margin: 60px;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    max-width: 100%;
+    max-height: 100vh; /* Prevents image from overflowing the viewport height */
+}
+
+
+
+.about-image{
+ width: auto;
+ height: auto;
+ object-fit: cover;
+ max-width: 100%;
+ max-height: 100vh;
+
+
+}
+.about-section{
+    padding:42px 20px;
+    background:whitesmoke;
+}
+.about-image-wrapper.about-image-wrapper.about-image-wrapper.about-image-wrapper .about-image{
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-section .section-content{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-title{
+    text-align: center;
+    padding: 60px 0px 50px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+.section-title::after{
+    content:"";
+    width: 80px;
+    height: 5px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.about-section .section-content{
+    gap: 40px;
+    flex-direction: column-reverse;
+
+}
+.social-link-list{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.social-link{
+border: 2px solid burlywood;
+border-radius: 10px;
+background-color: brown;
+}
+
+
+.menu-image{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.menu-section .menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   justify-content: center;
+}
+.menu-section .menu-list .menu-item{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+
+.menu-section .menu-list .menu-item {
+    transform-origin: center; /* Optional: to change the rotation point */
+    transition: transform 3s ease; /* Apply transition */
+}
+
+.menu-section .menu-list .menu-item:hover {
+    transform: rotateY(360deg);
+}
+
+.menu-section{
+  background-color: rgb(151, 181, 200);
+}
+.gab{
+  padding: 10px;
+
+}
+
+.testimonials-section {
+    padding: 50px 0 10px;
+    background-color: aliceblue;
+    height: 90vh; /* Ensure the section takes the full height of the viewport */
+}
+
+.testimonials-section .testimonails-list {
+    display: flex;
+    flex-direction: column; /* Stack the testimonials vertically */
+    align-items: center; /* Center the testimonials horizontally */
+    gap: 30px; /* Space between testimonials */
+    width: 90%; /* Ensure the list takes full width */
+    max-width: 700px; /* Set a maximum width to prevent it from stretching too far */
+    height: auto; /* Adjust height based on content */
+}
+
+.testimonials-section .testimonal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; /* Limit width of individual testimonials */
+}
+.user-image{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100px;
+    align-items: center;
+  justify-items: center;
+  justify-content: center;
+  justify-self:center;
+    
+}
+.testimonials-section .testimonal .user-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px; 
+    align-items: center;
+    justify-content: right;
+
+}
+.testimonials-section .testimonal .name{
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+    text-align: center;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    #p1 {
+        font-size: 1.2rem;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.testimonials-list{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding:50px;
+}
+.eo1{
+   
+    position:fixed;
+   height: 20px;
+   width: 193vh;
+   text-align: right;
+   background-size: cover;
+  } 
+.gallery{
+ background-color: whitesmoke;
+ padding: 30px 10px;
+ height: 100vh;
+}
+/* Gallery section adjustments */
+.gallery-list .gallery-items .gallery-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;  
+    border-radius: 10px;
+    display: flex;
+    cursor: zoom-in;
+    transition: transform 0.3s ease; /* Add transition for smooth zoom */
+}
+
+.gallery-list .gallery-items .gallery-image:hover {
+    transform: scale(1.2); /* Zoom in effect on hover */
+}
+
+.gallery-contect .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-list .gallery-items{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact{
+ background-color: aliceblue;
+ padding: 50px 0 100px;
+}
+.contact .contact-list{
+  display: flex;
+  justify-content: space-between;
+   
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+
+.contact-list .contact-items{
+
+ align-items: flex-start;
+ justify-content: center;
+ gap: 10px;
+ padding: 10px;
+width: 500px;
+
+}
+.contact-list .input{
+    object-fit: cover;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+   
+   height: 250px;
+   justify-content: center;
+}
+.input .form-input{
+    height: 35px;
+    width: 40vh;
+    border-radius: 10px;
+    border: none;
+}
+.submit-button{
+  height:50px;
+ width: 100px;
+  border-radius: 30px;
+  background-color: brown;
+  color: white;
+  border: none;
+}
+.contact-list .contact-items .contact-element{
+    list-style:none;
+    gap: 10px;
+   margin: auto;
+   padding: 10px;
+}
+
+
+/* Media query for medium screens (tablets and below) */
+@media screen and (max-width: 768px) {
+
+    /* Gallery section adjustments */
+    .gallery-content .gallery-list {
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap on small screens */
+        justify-content: center; /* Center items */
+    }
+
+    .gallery-list .gallery-items {
+        width: 150px; /* Full width of the parent container */
+        display: flex;
+        flex-wrap: wrap; /* Wrap items if necessary */
+        justify-content: center; /* Center content */
+    }
+
+    /* Gallery section adjustments */
+.gallery-list .gallery-items .gallery-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;  
+    border-radius: 10px;
+    display: flex;
+    cursor: zoom-in;
+    transition: transform 0.3s ease; /* Add transition for smooth zoom */
+}
+
+.gallery-list .gallery-items .gallery-image:hover {
+    transform: scale(1.2); /* Zoom in effect on hover */
+}
+
+    .eo1{
+        text-align:left;
+        position:fixed;
+       height: 20px;
+       width: 193vh;
+       background-size: cover;
+      } 
+     
+      .er{ 
+        position: fixed;     
+          left: 10px;
+      }
+}
+
+/* Media query for very small screens (like phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    .er{ 
+        position: fixed;     
+          left: 5px;
+          height: auto;
+          width: 400px;
+          font-size: 2px;
+
+      }
+  
+    .contact .contact-list{
+        text-align: center;
+        flex-direction: column;
+    justify-content: space-between;
+       justify-content: center;
+       align-items: center;
+       gap: 20px;
+      }
+
+    /* Gallery adjustments */
+    .gallery-list .gallery-items .gallery-image {
+        width: 100px; /* Make images take full width */
+        height: 100px; /* Adjust height for small screens */
+        padding: 2px;
+    }
+
+    /* Optional: Adjust spacing or layout changes */
+    .gallery-list {
+        justify-content: center;
+        display: flex; /* Center items on small screens */
+       flex-wrap: wrap;
+      
+    }
+    .eo1{
+     text-align: left;
+        position:fixed;
+       height: 20px;
+       width: 190vh;
+       background-size: cover;
+      } 
+      #e4,#e5{
+        padding: 1px;
+      }
+      .about-section{
+        padding:10px 20px;
+        background:whitesmoke;
+    }
+    .gallery{
+        background-color: whitesmoke;
+        padding: 30px 10px;
+        height: 110vh;
+       }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
