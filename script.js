@@ -11,14 +11,22 @@ document.addEventListener("DOMContentLoaded", function() {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      
       },
     });
   });
 
   function changeText(ids) {
-    ids.innerHTML = "Ooops!";
-     
+   
+  
+        ids.innerHTML = "Ooops!";
+        
+  setTimeout(function() {
+        ids.innerHTML = "Home";
+  
+  }, 1000);
+}
 
-  }
+     
 
   
