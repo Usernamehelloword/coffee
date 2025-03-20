@@ -12,7 +12,6 @@
     justify-content: right;
     background-color: rgb(0, 0, 0, 0.3);
     border-radius: 10px;
-   
 }
 
 .et a {
@@ -21,16 +20,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.2rem;
     padding: 10px 15px;
-    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease;
+    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease, transform 0.3s ease;
 }
-
 
 .et a:hover {
     color: black;
-    padding: 20px;
-    font-size: 30px;
+    font-size: 1.5rem;  /* Smooth font-size transition */
+    transform: scale(1.2) rotateY(360deg); /* Apply scaling and rotation together */
 }
-
 e2 {
     background-color: aliceblue;
 }
@@ -95,7 +92,10 @@ h1 {
     color: antiquewhite;
     transform: scale(1.1);
 }
-
+#hello{
+    text-decoration:none ;
+    color: aliceblue;
+}
 #e5 {
     position: absolute;
     left: 170px;
@@ -106,13 +106,14 @@ h1 {
     padding: 10px;
     border-radius: 20px;
     top: 530px;
-    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease;
+    transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease, transform 2s ease;
 }
 
 #e5:hover {
     color: antiquewhite;
-    transform: scale(1.1);
+    transform: rotateX(360deg); /* Smooth rotation on hover */
 }
+
 
 .er {
     position: fixed;
@@ -353,8 +354,7 @@ background-color: brown;
 .swiper-button-next {
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color:none;
     padding: 10px;
     border-radius: 50%;
 }
@@ -437,6 +437,11 @@ width: 500px;
    
    height: 250px;
    justify-content: center;
+}
+.input{
+    background-color: aqua;
+    height: auto;
+    width: 300px;
 }
 .input .form-input{
     height: 35px;
