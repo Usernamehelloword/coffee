@@ -147,24 +147,137 @@ nav #e4 {
         flex-direction: column;
     }
 }
-@media screen and (max-width:480px){
-    nav{
-        flex-direction: column;
+@media screen and (max-width: 480px) {
+    /* Ensure body or main container can scroll if needed */
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+
+    /* Adjust navigation to avoid it taking up too much space */
+    .ee {
        
-    }
-    .et a{
-    height: auto;
-    padding: 5px 5px;
-    }
-    #pp{
-        text-align: letf;
-        font-size: 1rem;
-    }
+        padding: 30px; /* Adjust padding for mobile */
+        justify-content: left; /* Center navigation items */
+        width: 100%; /* Ensure it takes full width */
     
+    }
+
+    .et a {
+        font-size: 1rem; /* Smaller font size for mobile */
+        padding: 1px 5px; /* Adjust padding for smaller screens */     
+    }
+
+    /* Make sure content sections are scrollable if they overflow */
+    .about-section, .gallery, .contact {
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+        overflow: auto; /* Allow sections to scroll if necessary */
+    }
+
+    /* Adjust the padding and width of sections */
+    .contact-list {
+        flex-direction: column; /* Stack contact elements vertically */
+        gap: 15px; /* Adjust gap for mobile */
+        align-items: center; /* Center align contact elements */
+        width: 100%; /* Ensure full width for mobile */
+    }
+
+    .input .form-input {
+        width: 90%; /* Make input fields take up more width */
+        margin: 5px 0;
+    }
+
+    .submit-button {
+        width: 80%; /* Make submit button smaller */
+        height: 40px;
+    }
+
+    /* Adjust for gallery layout */
+    .gallery-list .gallery-items .gallery-image {
+        width: 100px; /* Make gallery images smaller */
+        height: 100px;
+        margin: 5px;
+        transition: transform 0.3s ease; /* Add transition for smooth zoom */
+    }
+
+    .gallery-list .gallery-items .gallery-image:hover {
+        transform: scale(1.2); /* Zoom in effect on hover */
+    }
+
+    .gallery-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Adjust gap between gallery items */
+    }
+
+    /* Fix position of fixed elements like .eo1 and .er */
+    .eo1 {
+        position: fixed;
+        width: 100%; /* Make it take the full width */
+        text-align: left;
+        height: auto; /* Remove fixed height */
+    }
+
+    .er {
+        position: fixed;
+        left: 1px; /* Adjust positioning for mobile */
+        bottom: 10px; /* Move it to the bottom for smaller screens */
+        font-size: 14px; /* Reduce font size */
+        width: auto;
+      
+    }
+
+    /* Ensure hero image and sections fit properly */
+    .hero-image-wrapper {
+        width: 100%; /* Full width of the container */
+        height: auto; /* Adjust height automatically */
+        margin: 0; /* Remove margins to avoid overflow */
+    }
+
+    .about-section .section-content {
+        flex-direction: column; /* Stack about section content */
+        gap: 20px; /* Add spacing between elements */
+    }
+
+    .testimonials-section .testimonal {
+        width: 100%; /* Ensure testimonials fit on small screens */
+        max-width: 300px; /* Limit max width */
+    }
+
+    .menu-section .menu-list .menu-item {
+        padding: 15px 5px; /* Adjust padding for mobile */
+        width: 100%; /* Full width for mobile screens */
+    }
+
+    /* Contact section and form */
+    .contact .contact-list {
+        padding: 20px; /* Add some padding for mobile */
+        flex-direction: column; /* Stack contact items vertically */
+        gap: 15px; /* Add gap for spacing */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input {
+        width: 90%; /* Adjust width of input container */
+        gap: 10px;
+        height: auto;
+    }
+
+    .contact-list .contact-items {
+        width: 100%; /* Ensure contact items take up full width */
+    }
 }
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
 
 /* Make the hero image fit properly */
 .hero-image-wrapper {
+  margin-bottom: 173px;
     width: 100%; /* Full width of the container */
     height: auto; /* Adjust height automatically */
     display: flex;
@@ -273,24 +386,16 @@ background-color: brown;
     padding: 30px 10px;
     border-radius: 10px;
 }
-
 .menu-section .menu-list .menu-item {
     transform-origin: center; /* Optional: to change the rotation point */
     transition: transform 3s ease; /* Apply transition */
 }
-
 .menu-section .menu-list .menu-item:hover {
     transform: rotateY(360deg);
 }
-
 .menu-section{
   background-color: rgb(151, 181, 200);
 }
-.gab{
-  padding: 10px;
-
-}
-
 .testimonials-section {
     padding: 50px 0 10px;
     background-color: aliceblue;
@@ -463,7 +568,9 @@ width: 500px;
    margin: auto;
    padding: 10px;
 }
-
+#e7 {  top: 400px;}
+#e8 {  top: 450px;}
+#box { top: 350px;}
 
 /* Media query for medium screens (tablets and below) */
 @media screen and (max-width: 768px) {
@@ -511,62 +618,5 @@ width: 500px;
       }
 }
 
-/* Media query for very small screens (like phones in portrait mode) */
-@media screen and (max-width: 480px) {
-    .er{ 
-        position: fixed;     
-          left: 5px;
-          height: auto;
-          width: 400px;
-          font-size: 2px;
 
-      }
-  
-    .contact .contact-list{
-        text-align: center;
-        flex-direction: column;
-    justify-content: space-between;
-       justify-content: center;
-       align-items: center;
-       gap: 20px;
-      }
-
-    /* Gallery adjustments */
-    .gallery-list .gallery-items .gallery-image {
-        width: 100px; /* Make images take full width */
-        height: 100px; /* Adjust height for small screens */
-        padding: 2px;
-    }
-
-    /* Optional: Adjust spacing or layout changes */
-    .gallery-list {
-        justify-content: center;
-        display: flex; /* Center items on small screens */
-       flex-wrap: wrap;
-      
-    }
-    .eo1{
-     text-align: left;
-        position:fixed;
-       height: 20px;
-       width: 190vh;
-       background-size: cover;
-      } 
-      #e4,#e5{
-        padding: 1px;
-      }
-      .about-section{
-        padding:10px 20px;
-        background:whitesmoke;
-    }
-    .gallery{
-        background-color: whitesmoke;
-        padding: 30px 10px;
-        height: 110vh;
-       }
-}
-
-html{
-    scroll-behavior: smooth;
-}
 
