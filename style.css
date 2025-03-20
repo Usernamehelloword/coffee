@@ -60,7 +60,7 @@ h1 {
 }
 
 #e8 {
-    position: absolute;
+   position: absolute;
     left: 50px;
     height: 100px;
     width: 400px;
@@ -143,6 +143,12 @@ nav #e4 {
 
 /* Optional: Add responsiveness to maintain layout on zoom */
 @media (max-width: 768px) {
+    #e7 {  position: absolute;
+        top: 400px;}
+     #e8 { position: absolute;
+         top: 450px;}
+     #box { position: absolute;
+         top: 350px;}
     nav {
         flex-direction: column;
     }
@@ -234,7 +240,14 @@ nav #e4 {
         height: auto; /* Adjust height automatically */
         margin: 0; /* Remove margins to avoid overflow */
     }
-
+    .about-section ,
+    .menu-section ,
+    .testimonials-section ,
+    .contact{
+        width: 100%;
+        justify-content: center;
+    }
+   
     .about-section .section-content {
         flex-direction: column; /* Stack about section content */
         gap: 20px; /* Add spacing between elements */
@@ -249,6 +262,7 @@ nav #e4 {
         padding: 15px 5px; /* Adjust padding for mobile */
         width: 100%; /* Full width for mobile screens */
     }
+    
 
     /* Contact section and form */
     .contact .contact-list {
@@ -568,9 +582,6 @@ width: 500px;
    margin: auto;
    padding: 10px;
 }
-#e7 {  top: 400px;}
-#e8 {  top: 450px;}
-#box { top: 350px;}
 
 /* Media query for medium screens (tablets and below) */
 @media screen and (max-width: 768px) {
