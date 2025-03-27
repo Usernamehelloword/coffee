@@ -33,7 +33,7 @@ e2 {
 }
 
 body {
-    background-color: rgb(74, 28, 28);
+    background: linear-gradient(rgb(52, 22, 22) ,  brown);
     color:black;
 }
 
@@ -100,7 +100,7 @@ h1 {
     position: absolute;
     left: 170px;
     border: 2px solid white;
-    background-color: rgb(74, 28, 28);
+    background-color: transparent;
     width: 100px;
     color: aliceblue;
     padding: 10px;
@@ -162,11 +162,9 @@ nav #e4 {
 
     /* Adjust navigation to avoid it taking up too much space */
     .ee {
-       
         padding: 30px; /* Adjust padding for mobile */
         justify-content: left; /* Center navigation items */
         width: 100%; /* Ensure it takes full width */
-    
     }
 
     .et a {
@@ -175,10 +173,7 @@ nav #e4 {
     }
 
     /* Make sure content sections are scrollable if they overflow */
-    .about-section, .gallery, .contact {
-        padding: 10px 20px; /* Reduce padding for smaller screens */
-        overflow: auto; /* Allow sections to scroll if necessary */
-    }
+   
 
     /* Adjust the padding and width of sections */
     .contact-list {
@@ -199,23 +194,49 @@ nav #e4 {
     }
 
     /* Adjust for gallery layout */
-    .gallery-list .gallery-items .gallery-image {
-        width: 100px; /* Make gallery images smaller */
-        height: 100px;
-        margin: 5px;
-        transition: transform 0.3s ease; /* Add transition for smooth zoom */
-    }
+    /* Adjust the gallery container background height */
+.gallery {
+    height: 500px; /* Set a fixed height for the background of the gallery */
+    background-color: bisque; /* Keep the background color */
+    padding: 20px; /* Optional padding inside the gallery */
+    box-sizing: border-box; /* Ensure padding doesn't affect the overall height */
+}
 
-    .gallery-list .gallery-items .gallery-image:hover {
-        transform: scale(1.2); /* Zoom in effect on hover */
-    }
+/* If you want the gallery background to take a percentage of the viewport height */
+.gallery {
+    height: 50vh; /* 50% of the viewport height */
+    background-color: bisque;
+    padding: 50px; /* Optional padding inside the gallery */
+    box-sizing: border-box;
+}
 
-    .gallery-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px; /* Adjust gap between gallery items */
-    }
+/* Ensure gallery items remain responsive */
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.gallery-list .gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Make gallery images responsive */
+.gallery-list .gallery-items .gallery-image {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Maximum width for images */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.gallery-list .gallery-items .gallery-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
 
     /* Fix position of fixed elements like .eo1 and .er */
     .eo1 {
@@ -231,7 +252,6 @@ nav #e4 {
         bottom: 10px; /* Move it to the bottom for smaller screens */
         font-size: 14px; /* Reduce font size */
         width: auto;
-      
     }
 
     /* Ensure hero image and sections fit properly */
@@ -240,15 +260,23 @@ nav #e4 {
         height: auto; /* Adjust height automatically */
         margin: 0; /* Remove margins to avoid overflow */
     }
-    .about-section ,
-    .menu-section ,
-    .testimonials-section ,
-    .contact{
+
+    .about-section,
+    .menu-section,
+    .testimonials-section,
+    .contact1,
+    .gallery {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-   
+
+    .section-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     .about-section .section-content {
         flex-direction: column; /* Stack about section content */
         gap: 20px; /* Add spacing between elements */
@@ -263,10 +291,9 @@ nav #e4 {
         padding: 15px 5px; /* Adjust padding for mobile */
         width: 100%; /* Full width for mobile screens */
     }
-    
 
     /* Contact section and form */
-    .contact .contact-list {
+    .contact1 .contact-list {
         padding: 20px; /* Add some padding for mobile */
         flex-direction: column; /* Stack contact items vertically */
         gap: 15px; /* Add gap for spacing */
@@ -284,6 +311,7 @@ nav #e4 {
         width: 100%; /* Ensure contact items take up full width */
     }
 }
+
 
 html {
     scroll-behavior: smooth; /* Smooth scrolling */
@@ -327,7 +355,7 @@ html {
 }
 .about-section{
     padding:42px 20px;
-    background:whitesmoke;
+    background:linear-gradient(rgb(47, 55, 60),rgb(188, 179, 233));
 }
 .about-image-wrapper.about-image-wrapper.about-image-wrapper.about-image-wrapper .about-image{
     width: 900px;
@@ -409,11 +437,11 @@ background-color: brown;
     transform: rotateY(360deg);
 }
 .menu-section{
-  background-color: rgb(151, 181, 200);
+ background: linear-gradient(rgb(173, 157, 157),rgb(70, 70, 98));
 }
 .testimonials-section {
     padding: 50px 0 10px;
-    background-color: aliceblue;
+   background: linear-gradient(rgb(158, 158, 192),rgb(222, 129, 129));
     height: 90vh; /* Ensure the section takes the full height of the viewport */
 }
 
@@ -461,6 +489,7 @@ background-color: brown;
     font-size: var(--font-size-m);
     text-align: center;
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
@@ -494,7 +523,7 @@ background-color: brown;
    background-size: cover;
   } 
 .gallery{
- background-color: whitesmoke;
+    background: linear-gradient(rgb(220, 173, 173),white,rgb(155, 155, 207));
  padding: 30px 10px;
  height: 100vh;
 }
@@ -526,11 +555,12 @@ background-color: brown;
     justify-content: center;
     flex-direction: column;
 }
-.contact{
- background-color: aliceblue;
- padding: 50px 0 100px;
+.contact1{
+ background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
+ padding: 50px 0 240px;
+
 }
-.contact .contact-list{
+.contact1 .contact-list{
   display: flex;
   justify-content: space-between;
    
