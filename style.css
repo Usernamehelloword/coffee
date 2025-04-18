@@ -1,5 +1,6 @@
 /* Reset default margin and padding for all elements */
 * {
+   
     margin: 0;
     padding: 0;
 }
@@ -148,6 +149,34 @@ nav #e4 {
     text-align: letf;
     
 }
+.gallery{
+    width: 1277px;
+    background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
+ padding: 30px 10px;
+ height: 100vh;
+}
+
+.about-section{
+    width: 1257px;
+    padding:42px 20px;
+    background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
+}
+.contact1{
+    width: 100%;
+    background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
+    padding: 50px 0 240px;
+  
+   }
+   .testimonials-section {
+    width: 100%;
+    padding: 50px 0 10px;
+   background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
+    height: 100vh; /* Ensure the section takes the full height of the viewport */
+}
+.menu-section{
+    width: 100%;
+ background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
+}
 
 /* Optional: Add responsiveness to maintain layout on zoom */
 @media (max-width: 768px) {
@@ -162,213 +191,145 @@ nav #e4 {
     }
 }
 @media screen and (max-width: 480px) {
-    /* Ensure body or main container can scroll if needed */
+
     body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        overflow-y: auto; /* Allow vertical scrolling */
+      overflow-x: hidden;
+      padding: 0;
+      margin: 0;
     }
-    .hero-image-wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  
+    h1 {
+      font-size: 1.2rem;
+      left: 20px;
+      top: 20px;
     }
-    #e7 {
-        height: 100px;
-        width: 300px;
-        position: absolute;
-        left: 10px;
-        top: 350px;
-        
-    }
-    
-    #e8 {
-       position: absolute;
-        left: 10px;
-        height: 100px;
-        width: 300px;
-        top: 450px;
-        border: 2px solid chocolate;
-        border-radius: 10px;
-    }
-    #p1 {
-        color: aliceblue;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 15px;
-        
-    }
-
-    /* Adjust navigation to avoid it taking up too much space */
+  
     .ee {
-        padding: 30px; /* Adjust padding for mobile */
-        justify-content: center; /* Center navigation items */
-        width: 300px; /* Ensure it takes full width */
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 15px 5px;
     }
-
+  
     .et a {
-        font-size: 1rem; /* Smaller font size for mobile */
-        padding: 1px 5px; /* Adjust padding for smaller screens */     
+      font-size: 1rem;
+      padding: 5px;
     }
-
-    /* Make sure content sections are scrollable if they overflow */
-   
-
-    /* Adjust the padding and width of sections */
+  
+    #e7, #e8, #box, #e4, #e5 {
+      position: relative;
+      width: 90%;
+      left: 0;
+      top: auto;
+      margin: 10px auto;
+    }
+  
+    #e4, #e5 {
+      width: 45%;
+      display: inline-block;
+      margin: 10px 2%;
+      text-align: center;
+    }
+  
+    .hero-image-wrapper {
+      height: auto;
+      margin-bottom: 50px;
+    }
+  
+    .hero-image {
+      max-height: 300px;
+    }
+  
+    .menu-section,
+    .gallery,
+    .about-section,
+    .testimonials-section,
+    .contact1 {
+      width: 100%;
+      padding: 20px 10px;
+    }
+  
+    .menu-section .menu-list,
+    .gallery-list,
     .contact-list {
-        flex-direction: column; /* Stack contact elements vertically */
-        gap: 15px; /* Adjust gap for mobile */
-        align-items: center; /* Center align contact elements */
-        width: 100%; /* Ensure full width for mobile */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-section .menu-list .menu-item,
+    .gallery-list .gallery-items,
+    .testimonials-section .testimonal {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .testimonials-section {
+      height: auto;
+    }
+  
+    .contact1 {
+      padding-bottom: 100px;
+    }
+  
+    .contact-list .input {
+      width: 100%;
+    }
+  
+    .input .form-input {
+      width: 100%;
+    }
+  
+    .submit-button {
+      width: 100%;
+    }
+  
+    .eo1, .er {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .er {
+        overflow-x: hidden;
+        display: flex;
+      bottom: 0;
+      left: 0;
+      padding: 10px;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .about-section{
+
+        width: 460px;
+        padding:42px 20px;
+        background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
     }
     .contact1{
-        text-align: center;
-        width: 100vh;
+        width: 500px;
         background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
         padding: 50px 0 240px;
-       
+        overflow-x: hidden;
        }
-
-    .input .form-input {
-        width: 90%; /* Make input fields take up more width */
-        margin: 5px 0;
+       .menu-section{
+        width: 480px;
+     background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
     }
-
-    .submit-button {
-        width: 80%; /* Make submit button smaller */
-        height: 40px;
+    .testimonials-section {
+        width: 500px;
+        padding: 50px 0 10px;
+       background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
+        height: 90vh; /* Ensure the section takes the full height of the viewport */
     }
-
-    /* Adjust for gallery layout */
-    /* Adjust the gallery container background height */
-.gallery {
-    height: 500px; /* Set a fixed height for the background of the gallery */
-    background-color: bisque; /* Keep the background color */
-    padding: 20px; /* Optional padding inside the gallery */
-    box-sizing: border-box; /* Ensure padding doesn't affect the overall height */
-}
-
-/* If you want the gallery background to take a percentage of the viewport height */
-.gallery {
-    height: 50vh; /* 50% of the viewport height */
-    background-color: bisque;
-    padding: 50px; /* Optional padding inside the gallery */
-    box-sizing: border-box;
-}
-
-/* Ensure gallery items remain responsive */
-.gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-}
-
-.gallery-list .gallery-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-/* Make gallery images responsive */
-.gallery-list .gallery-items .gallery-image {
-    width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 200px; /* Maximum width for images */
-    transition: transform 0.3s ease; /* Smooth zoom effect */
-}
-
-.gallery-list .gallery-items .gallery-image:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-}
-
-
-    /* Fix position of fixed elements like .eo1 and .er */
-    .eo1 {
-        position: fixed;
-        width: 100%; /* Make it take the full width */
-        text-align: left;
-        height: auto; /* Remove fixed height */
-    }
-
-    .er {
-        position: fixed;
-        left: 1px; /* Adjust positioning for mobile */
-        bottom: 10px; /* Move it to the bottom for smaller screens */
-        font-size: 14px; /* Reduce font size */
-        width: auto;
-    }
-
-    /* Ensure hero image and sections fit properly */
-    .hero-image-wrapper {
-        width: 100%; /* Full width of the container */
-        height: auto; /* Adjust height automatically */
-        margin: 0; /* Remove margins to avoid overflow */
-    }
-    .menu-section{
-        justify-items: center;
-        align-items: center;
-        width:100vh ;
-        height: auto;
-        background: linear-gradient(rgb(92, 83, 83),rgb(30, 30, 49));
-       }
-       .gallery{
-        width: 100vh;
+    .gallery{
+        width: 480px;
         background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
      padding: 30px 10px;
      height: 100vh;
     }
 
-    .section-content {
-        width: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .testimonials-section {
-        width: 90vh;
-        padding: 50px 0 10px;
-       background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
-        height: 90vh; /* Ensure the section takes the full height of the viewport */
-    }
-    .about-section{
-        width:100vh;
-        height: auto;
-         background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
-     }
 
-    .about-section .section-content {
-        flex-direction: column; /* Stack about section content */
-        gap: 20px; /* Add spacing between elements */
-    }
-
-    .testimonials-section .testimonal {
-        width: 100%; /* Ensure testimonials fit on small screens */
-        max-width: 300px; /* Limit max width */
-    }
-
-    .menu-section .menu-list .menu-item {
-        padding: 15px 5px; /* Adjust padding for mobile */
-        width: 100vh; /* Full width for mobile screens */
-    }
-
-    /* Contact section and form */
-    .contact1 .contact-list {
-        padding: 20px; /* Add some padding for mobile */
-        flex-direction: column; /* Stack contact items vertically */
-        gap: 15px; /* Add gap for spacing */
-        align-items: center;
-        justify-content: center;
-    }
-
-    .input {
-        width: 90%; /* Adjust width of input container */
-        gap: 10px;
-        height: auto;
-    }
-
-    .contact-list .contact-items {
-        width: 100%; /* Ensure contact items take up full width */
-    }
-}
+    
+  }
+  
 
 
 html {
@@ -413,10 +374,7 @@ html {
 
 
 }
-.about-section{
-    padding:42px 20px;
-    background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
-}
+
 .about-image-wrapper.about-image-wrapper.about-image-wrapper.about-image-wrapper .about-image{
     width: 850px;
     height: 500px;
@@ -479,6 +437,7 @@ box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 
 
+
 .menu-section .menu-list{
     display: flex;
     flex-wrap: wrap;
@@ -501,14 +460,6 @@ box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 .menu-section .menu-list .menu-item:hover {
     transform: rotateY(360deg);
-}
-.menu-section{
- background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
-}
-.testimonials-section {
-    padding: 50px 0 10px;
-   background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
-    height: 90vh; /* Ensure the section takes the full height of the viewport */
 }
 
 .testimonials-section .testimonails-list {
@@ -592,11 +543,7 @@ box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
    text-align: right;
    background-size: cover;
   } 
-.gallery{
-    background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
- padding: 30px 10px;
- height: 100vh;
-}
+
 /* Gallery section adjustments */
 .gallery-list .gallery-items .gallery-image {
     width: 180px;
@@ -688,6 +635,40 @@ width: 500px;
 
 /* Media query for medium screens (tablets and below) */
 @media screen and (max-width: 768px) {
+   
+    .about-section{
+  overflow: hidden;
+        width: 610px;
+        padding:42px 20px;
+        background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
+    }
+    .contact1{
+        overflow: hidden;
+        width: 650px;
+        background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
+        padding: 50px 0 240px;
+        overflow-x: hidden;
+       }
+       .menu-section{
+        overflow: hidden;
+        width: 650px;
+     background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
+    }
+    .testimonials-section {
+        overflow: hidden;
+        width: 650px;
+        padding: 50px 0 10px;
+       background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
+        height: 90vh; /* Ensure the section takes the full height of the viewport */
+    }
+    .gallery{
+         overflow: hidden;
+        width: 630px;
+        background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
+     padding: 30px 10px;
+     height: 100vh;
+    }
+
 
     /* Gallery section adjustments */
     .gallery-content .gallery-list {
