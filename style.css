@@ -9,9 +9,12 @@
     list-style: none;
     padding: 20px;
     display: flex;
-    justify-content: right;
     background-color: rgb(0, 0, 0, 0.3);
     border-radius: 10px;
+  
+}
+.e1{
+  font-size: 30px;
 }
 
 .et a {
@@ -28,12 +31,14 @@
     font-size: 1.5rem;  /* Smooth font-size transition */
     transform: scale(1.2) rotateY(360deg); /* Apply scaling and rotation together */
 }
-e2 {
-    background-color: aliceblue;
+.e2 {
+    background-color: black;
+    border: 2px solid coral;
+    border-radius: 10px;
 }
 
 body {
-    background: linear-gradient(rgb(52, 22, 22) ,  brown);
+    background: linear-gradient(rgb(102, 51, 0) ,rgb(255, 0, 102),rgb(51, 51, 0));
     color:black;
 }
 
@@ -47,24 +52,27 @@ h1 {
 #p1 {
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     
 }
 
 #e7 {
     height: 100px;
-    width: 400px;
+    width: 600px;
     position: absolute;
     left: 50px;
     top: 350px;
+    
 }
 
 #e8 {
    position: absolute;
     left: 50px;
     height: 100px;
-    width: 400px;
+    width: 500px;
     top: 450px;
+    border: 2px solid chocolate;
+    border-radius: 10px;
 }
 
 #box {
@@ -83,7 +91,7 @@ h1 {
     border-radius: 20px;
     background-color: chocolate;
     padding: 10px;
-    top: 530px;
+    top: 580px;
     width: 100px;
     transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease;
 }
@@ -105,7 +113,7 @@ h1 {
     color: aliceblue;
     padding: 10px;
     border-radius: 20px;
-    top: 530px;
+    top: 580px;
     transition: color 0.3s ease, font-size 0.3s ease, text-transform 0.3s ease, transform 2s ease;
 }
 
@@ -116,12 +124,12 @@ h1 {
 
 
 .er {
+   
     position: fixed;
-    left: 400px;
+    left: 330px;
     gap: 10px;
-    text-align: right;
+    text-align: center;
     padding: 45px 20px 10px;
-    flex-direction: column-reverse;
     justify-content: center;
     display: flex; /* Ensure flex properties apply */
     align-items: center; /* Center content horizontally */
@@ -159,6 +167,11 @@ nav #e4 {
         overflow-x: hidden; /* Prevent horizontal scrolling */
         overflow-y: auto; /* Allow vertical scrolling */
     }
+    .hero-image-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     /* Adjust navigation to avoid it taking up too much space */
     .ee {
@@ -182,6 +195,13 @@ nav #e4 {
         align-items: center; /* Center align contact elements */
         width: 100%; /* Ensure full width for mobile */
     }
+    .contact1{
+        text-align: center;
+        width: 73vh;
+        background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
+        padding: 50px 0 240px;
+       
+       }
 
     .input .form-input {
         width: 90%; /* Make input fields take up more width */
@@ -260,22 +280,36 @@ nav #e4 {
         height: auto; /* Adjust height automatically */
         margin: 0; /* Remove margins to avoid overflow */
     }
-
-    .about-section,
-    .menu-section,
-    .testimonials-section,
-    .contact1,
-    .gallery {
-        width: 100%;
-        justify-content: center;
+    .menu-section{
+        justify-items: center;
         align-items: center;
+        width:69vh ;
+        height: auto;
+        background: linear-gradient(rgb(92, 83, 83),rgb(30, 30, 49));
+       }
+       .gallery{
+        width: 68vh;
+        background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
+     padding: 30px 10px;
+     height: 100vh;
     }
 
     .section-content {
-        width: 100%;
+        width: 63vh;
         justify-content: center;
         align-items: center;
     }
+    .testimonials-section {
+        width: 73vh;
+        padding: 50px 0 10px;
+       background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
+        height: 90vh; /* Ensure the section takes the full height of the viewport */
+    }
+    .about-section{
+        width: 63vh;
+        height: auto;
+         background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
+     }
 
     .about-section .section-content {
         flex-direction: column; /* Stack about section content */
@@ -320,9 +354,10 @@ html {
 
 /* Make the hero image fit properly */
 .hero-image-wrapper {
+   
   margin-bottom: 173px;
     width: 100%; /* Full width of the container */
-    height: auto; /* Adjust height automatically */
+    height: 700px; /* Adjust height automatically */
     display: flex;
     justify-content: center;
     transition: transform 0.5s ease; /* Smooth transition for transform */
@@ -334,6 +369,7 @@ html {
 
 
 .hero-image {
+    border: 4px solid black;
     margin: 60px;
     width: auto;
     height: auto;
@@ -355,13 +391,15 @@ html {
 }
 .about-section{
     padding:42px 20px;
-    background:linear-gradient(rgb(47, 55, 60),rgb(188, 179, 233));
+    background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
 }
 .about-image-wrapper.about-image-wrapper.about-image-wrapper.about-image-wrapper .about-image{
-    width: 900px;
-    height: 400px;
+    width: 850px;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 .about-section .section-content{
     gap: 40px;
@@ -381,8 +419,9 @@ html {
     height: 5px;
     margin: 10px auto 0;
     display: block;
-    background-color: bisque;
+    background-color: purple;
     border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 .about-section .section-content{
     gap: 40px;
@@ -399,9 +438,10 @@ html {
 }
 
 .social-link{
-border: 2px solid burlywood;
+border: 2px solid white;
 border-radius: 10px;
-background-color: brown;
+background-color: rgb(137, 90, 137);
+box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -411,6 +451,7 @@ background-color: brown;
     display: flex;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -424,7 +465,8 @@ background-color: brown;
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
     text-align: center;
     padding: 30px 10px;
     border-radius: 10px;
@@ -437,11 +479,11 @@ background-color: brown;
     transform: rotateY(360deg);
 }
 .menu-section{
- background: linear-gradient(rgb(173, 157, 157),rgb(70, 70, 98));
+ background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
 }
 .testimonials-section {
     padding: 50px 0 10px;
-   background: linear-gradient(rgb(158, 158, 192),rgb(222, 129, 129));
+   background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
     height: 90vh; /* Ensure the section takes the full height of the viewport */
 }
 
@@ -465,14 +507,16 @@ background-color: brown;
     max-width: 300px; /* Limit width of individual testimonials */
 }
 .user-image{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border: 4px solid black;
     border-radius: 100px;
     align-items: center;
   justify-items: center;
   justify-content: center;
   justify-self:center;
+  box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
     
 }
 .testimonials-section .testimonal .user-image {
@@ -490,6 +534,7 @@ background-color: brown;
     text-align: center;
 }
 
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;
@@ -498,6 +543,7 @@ background-color: brown;
         font-size: 1.2rem;
     }
 }
+
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -523,14 +569,14 @@ background-color: brown;
    background-size: cover;
   } 
 .gallery{
-    background: linear-gradient(rgb(220, 173, 173),white,rgb(155, 155, 207));
+    background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
  padding: 30px 10px;
  height: 100vh;
 }
 /* Gallery section adjustments */
 .gallery-list .gallery-items .gallery-image {
     width: 180px;
-    height: 180px;
+    height: 400px;
     object-fit: cover;  
     border-radius: 10px;
     display: flex;
@@ -547,6 +593,7 @@ background-color: brown;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    
 }
 
 .gallery-list .gallery-items{
@@ -554,6 +601,7 @@ background-color: brown;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
 }
 .contact1{
  background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
