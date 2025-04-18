@@ -180,155 +180,147 @@ nav #e4 {
 
 /* Optional: Add responsiveness to maintain layout on zoom */
 @media (max-width: 768px) {
-    #e7 {  position: absolute;
-        top: 400px;}
-     #e8 { position: absolute;
-         top: 450px;}
-     #box { position: absolute;
-         top: 350px;}
+    #e7, #e8, #e4, #e5, #box {
+        position: relative;
+        margin: 10px auto;}
     nav {
         flex-direction: column;
     }
 }
 @media screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
 
-    body {
-      overflow-x: hidden;
-      padding: 0;
-      margin: 0;
-    }
-  
     h1 {
-      font-size: 1.2rem;
-      left: 20px;
-      top: 20px;
+        font-size: 1.2rem;
+        left: 20px;
+        top: 20px;
     }
-  
+
     .ee {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 15px 5px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
     }
-  
+
     .et a {
-      font-size: 1rem;
-      padding: 5px;
+        font-size: 1rem;
+        padding: 5px;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
-  
+
     #e7, #e8, #box, #e4, #e5 {
-      position: relative;
-      width: 90%;
-      left: 0;
-      top: auto;
-      margin: 10px auto;
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: auto;
+        margin: 10px auto;
     }
-  
+
     #e4, #e5 {
-      width: 45%;
-      display: inline-block;
-      margin: 10px 2%;
-      text-align: center;
+        width: 45%;
+        display: inline-block;
+        margin: 10px 2.5%;
+        text-align: center;
     }
-  
+
     .hero-image-wrapper {
-      height: auto;
-      margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin: 0 auto 40px;
     }
-  
+
     .hero-image {
-      max-height: 300px;
+        width: 90%;
+        height: auto;
+        max-height: 300px;
+        margin: 0 auto;
     }
-  
+
+    .about-image-wrapper .about-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-section .section-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
     .menu-section,
     .gallery,
     .about-section,
     .testimonials-section,
     .contact1 {
-      width: 100%;
-      padding: 20px 10px;
+        width: 100%;
+        padding: 20px 10px;
     }
-  
-    .menu-section .menu-list,
-    .gallery-list,
-    .contact-list {
-      flex-direction: column;
-      align-items: center;
+
+    .gallery-list .gallery-items {
+        width: 100%;
+        max-width: 160px;
     }
-  
-    .menu-section .menu-list .menu-item,
-    .gallery-list .gallery-items,
+
+    .gallery-list .gallery-items .gallery-image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .testimonials-section {
+        height: auto;
+        padding: 20px 10px;
+    }
+
     .testimonials-section .testimonal {
-      width: 90%;
-      max-width: 300px;
+        width: 90%;
+        max-width: 300px;
+        margin: auto;
     }
-  
-    .testimonials-section {
-      height: auto;
+
+    .user-image {
+        width: 120px;
+        height: 120px;
     }
-  
-    .contact1 {
-      padding-bottom: 100px;
+
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
-  
+
     .contact-list .input {
-      width: 100%;
+        width: 100%;
     }
-  
-    .input .form-input {
-      width: 100%;
-    }
-  
+
+    .input .form-input,
     .submit-button {
-      width: 100%;
+        width: 100%;
     }
-  
-    .eo1, .er {
-      width: 100%;
-      font-size: 0.9rem;
+
+    .eo1 {
+        width: 100vw;
+        text-align: left;
     }
-  
+
     .er {
-        overflow-x: hidden;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
         display: flex;
-      bottom: 0;
-      left: 0;
-      padding: 10px;
-      position: fixed;
-      background-color: rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        align-items: center;
     }
-    .about-section{
+}
 
-        width: 460px;
-        padding:42px 20px;
-        background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
-    }
-    .contact1{
-        width: 500px;
-        background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
-        padding: 50px 0 240px;
-        overflow-x: hidden;
-       }
-       .menu-section{
-        width: 480px;
-     background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
-    }
-    .testimonials-section {
-        width: 500px;
-        padding: 50px 0 10px;
-       background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
-        height: 90vh; /* Ensure the section takes the full height of the viewport */
-    }
-    .gallery{
-        width: 480px;
-        background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
-     padding: 30px 10px;
-     height: 100vh;
-    }
-
-
-    
-  }
   
 
 
@@ -341,10 +333,12 @@ html {
 .hero-image-wrapper {
    
   margin-bottom: 173px;
-    width: 100%; /* Full width of the container */
-    height: 700px; /* Adjust height automatically */
+    width: 400px; /* Full width of the container */
+    height: 500px; /* Adjust height automatically */
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    margin-left: 30px;
+
     transition: transform 0.5s ease; /* Smooth transition for transform */
 }
 
@@ -369,14 +363,14 @@ html {
  width: auto;
  height: auto;
  object-fit: cover;
- max-width: 100%;
- max-height: 100vh;
+ max-width: 500px;
+ max-height: auto;
 
 
 }
 
 .about-image-wrapper.about-image-wrapper.about-image-wrapper.about-image-wrapper .about-image{
-    width: 850px;
+    width: 500px;
     height: 500px;
     object-fit: cover;
     border-radius: 10px;
@@ -637,33 +631,33 @@ width: 500px;
 @media screen and (max-width: 768px) {
    
     .about-section{
-  overflow: hidden;
-        width: 610px;
+  
+        width: 100%;
         padding:42px 20px;
         background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
     }
     .contact1{
-        overflow: hidden;
-        width: 650px;
+       
+        width: 100%;
         background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
         padding: 50px 0 240px;
-        overflow-x: hidden;
+       
        }
        .menu-section{
-        overflow: hidden;
-        width: 650px;
+       
+        width: 100%;
      background: linear-gradient(rgb(231, 228, 228),rgb(30, 30, 49));
     }
     .testimonials-section {
-        overflow: hidden;
-        width: 650px;
+      
+        width: 100%;
         padding: 50px 0 10px;
        background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
         height: 90vh; /* Ensure the section takes the full height of the viewport */
     }
     .gallery{
-         overflow: hidden;
-        width: 630px;
+     
+        width: 100%;
         background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
      padding: 30px 10px;
      height: 100vh;
@@ -703,7 +697,7 @@ width: 500px;
         text-align:left;
         position:fixed;
        height: 20px;
-       width: 193vh;
+       width: 100vw;
        background-size: cover;
       } 
      
@@ -712,6 +706,8 @@ width: 500px;
           left: 10px;
       }
 }
+
+
 
 
 
