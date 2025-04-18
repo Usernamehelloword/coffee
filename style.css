@@ -172,12 +172,36 @@ nav #e4 {
         justify-content: center;
         align-items: center;
     }
+    #e7 {
+        height: 100px;
+        width: 300px;
+        position: absolute;
+        left: 10px;
+        top: 350px;
+        
+    }
+    
+    #e8 {
+       position: absolute;
+        left: 10px;
+        height: 100px;
+        width: 300px;
+        top: 450px;
+        border: 2px solid chocolate;
+        border-radius: 10px;
+    }
+    #p1 {
+        color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        
+    }
 
     /* Adjust navigation to avoid it taking up too much space */
     .ee {
         padding: 30px; /* Adjust padding for mobile */
-        justify-content: left; /* Center navigation items */
-        width: 100%; /* Ensure it takes full width */
+        justify-content: center; /* Center navigation items */
+        width: 300px; /* Ensure it takes full width */
     }
 
     .et a {
@@ -197,7 +221,7 @@ nav #e4 {
     }
     .contact1{
         text-align: center;
-        width: 73vh;
+        width: 100vh;
         background: linear-gradient(aliceblue,rgba(18, 18, 136, 0.303));
         padding: 50px 0 240px;
        
@@ -283,30 +307,30 @@ nav #e4 {
     .menu-section{
         justify-items: center;
         align-items: center;
-        width:69vh ;
+        width:100vh ;
         height: auto;
         background: linear-gradient(rgb(92, 83, 83),rgb(30, 30, 49));
        }
        .gallery{
-        width: 68vh;
+        width: 100vh;
         background: linear-gradient(rgb(70, 65, 65),rgb(208, 28, 28),rgb(45, 45, 194));
      padding: 30px 10px;
      height: 100vh;
     }
 
     .section-content {
-        width: 63vh;
+        width: 100vh;
         justify-content: center;
         align-items: center;
     }
     .testimonials-section {
-        width: 73vh;
+        width: 90vh;
         padding: 50px 0 10px;
        background: linear-gradient(rgb(158, 158, 192),rgb(55, 18, 18));
         height: 90vh; /* Ensure the section takes the full height of the viewport */
     }
     .about-section{
-        width: 63vh;
+        width:100vh;
         height: auto;
          background:linear-gradient(rgb(130, 170, 230),rgb(88, 78, 137),rgb(31, 28, 47));
      }
@@ -323,7 +347,7 @@ nav #e4 {
 
     .menu-section .menu-list .menu-item {
         padding: 15px 5px; /* Adjust padding for mobile */
-        width: 100%; /* Full width for mobile screens */
+        width: 100vh; /* Full width for mobile screens */
     }
 
     /* Contact section and form */
